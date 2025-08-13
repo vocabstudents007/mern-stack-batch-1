@@ -69,11 +69,11 @@ let student = {
     "age" : 25,
     "isPassed" : true,
     "phoneNumber" : 9876543210,
-    subjects : ["Javascript","Java","Python"]
+    subjects : ["Javascript","java","Python"]
 }
 
 let s = student['subjects'];
-s.filter(x => x.includes("Java"))
+s.filter(x => x.toLowerCase().includes("java"))
     .map(x => x.toUpperCase())
     .forEach(x => console.log(x));
 
