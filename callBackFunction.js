@@ -72,6 +72,10 @@ let student = {
     subjects : ["Javascript","java","Python"]
 }
 
+student["ssc"] = "88"
+console.log(student);
+
+
 let s = student['subjects'];
 s.filter(x => x.toLowerCase().includes("java"))
     .map(x => x.toUpperCase())
